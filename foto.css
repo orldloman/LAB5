@@ -1,0 +1,50 @@
+﻿body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  #album-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  #album-view img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+  
+  #album-view img:hover {
+    transform: scale(1.05);
+  }
+  
+  #modal-view {
+    display: none; /* 🔒 oculto por defecto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  #modal-view img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  
